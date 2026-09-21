@@ -1,0 +1,92 @@
+/* Torna o fundo do DatePicker e de seus elementos internos totalmente transparentes */
+.date-picker {
+    -fx-background-color: transparent;
+    -fx-border-color: white;       /* Cor da borda */
+    -fx-border-width: 1px;         /* Espessura da borda */
+    -fx-border-radius: 2px;        /* Opcional: arredonda os cantos da borda */
+}
+
+/* Torna o campo de texto interno transparente e remove sua borda padrão interna */
+.date-picker > .text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+/* Torna o botão do calendário interno transparente */
+.date-picker > .arrow-button {
+    -fx-background-color: transparent;
+}
+
+/* Opcional: Deixa o ícone da setinha e o texto brancos para combinar com a borda */
+.date-picker > .arrow-button > .arrow {
+    -fx-background-color: white;
+}
+
+.date-picker > .text-field {
+    -fx-text-fill: white;
+}
+
+.spinner {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+}
+
+/* Torna o campo de texto interno do Spinner transparente e com texto branco */
+.spinner > .text-field {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+/* Torna os botões de cima/baixo transparentes */
+.spinner > .increment-arrow-button,
+.spinner > .decrement-arrow-button {
+    -fx-background-color: transparent;
+}
+
+/* Deixa as setinhas dos botões brancas */
+.spinner > .increment-arrow-button > .increment-arrow,
+.spinner > .decrement-arrow-button > .decrement-arrow {
+    -fx-background-color: white;
+}
+
+.combo-box {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+}
+
+.combo-box .text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: rgba(255, 255, 255, 0.6);
+}
+
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+.combo-box-popup .list-view {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 1px;
+}
+
+.combo-box-popup .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.15);
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-cell:filled:selected {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-text-fill: white;
+}
