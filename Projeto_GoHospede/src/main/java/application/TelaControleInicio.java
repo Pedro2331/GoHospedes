@@ -114,6 +114,7 @@ public class TelaControleInicio {
                     "Guaramiranga"
                     );
 	public void initialize() { 
+		 lblmenuinicio.setStyle("-fx-text-fill: #0078D7;");
 		paineldestinos.setVisible(false);
 		painelinicio.setVisible(true);
 		 combodestino.setEditable(true);
@@ -237,14 +238,18 @@ public class TelaControleInicio {
 	    }
 	    @FXML
 	    void telainicio(MouseEvent event) {
+	    	   lblmenuinicio.setStyle("-fx-text-fill: #0078D7;");
+	    	   lblmenudestinos.setStyle("-fx-text-fill: #FFFFFF;");
 	    	painelinicio.setVisible(true);
 	    	paineldestinos.setVisible(false);
 	    }
 	    @FXML
 	    void teladestinos(MouseEvent event) {
+	    	 lblmenudestinos.setStyle("-fx-text-fill: #0078D7;");
+	    	 lblmenuinicio.setStyle("-fx-text-fill: #FFFFFF;");
 	    	painelinicio.setVisible(false);
 	    	paineldestinos.setVisible(true);
 	    }
-
+	   
 
 	}
